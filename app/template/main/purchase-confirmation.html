@@ -1,0 +1,14 @@
+<ion-view ng-init="init()" view-title="Dasboard">
+    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+        <!-- tab-->
+        <dasboard-tabs></dasboard-tabs>
+        <!-- /tab-->
+        <h4 class="content padding double-padding-x">Purchase Detail</h4>
+        <form ng-submit="submitAmount(form,value)">
+            <div style="" class="list">
+                <h1 style="text-align:center">Tap your card</h1>
+            </div>
+        </form>                      
+        </div>
+    </ion-content>
+</ion-view>

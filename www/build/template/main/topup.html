@@ -1,0 +1,18 @@
+<ion-view ng-init="init()" view-title="topup">
+    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+        <!-- tab-->
+        <dasboard-tabs></dasboard-tabs>
+        <!-- /tab-->
+        <h4 class="content padding double-padding-x">Your Detail</h4>
+        <form ng-submit="submitAmount(form,value)">
+            <div style="" class="list">
+                    <ion-md-input placeholder="amount" ng-model="value.amount" highlight-color="energized" type="tel"></ion-md-input>
+            </div>
+            <div class="padding">
+                <button class="button button-full button-assertive ink">Next</button>
+                
+            </div>
+        </form>                      
+        </div>
+    </ion-content>
+</ion-view>

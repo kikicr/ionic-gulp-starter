@@ -1,0 +1,49 @@
+<ion-view ng-init="init()" view-title="Dasboard">
+    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+            <div class="hero slide-up" style="background-image: url('img/background/jakarta.jpg');">
+            <div class="content">
+                <div class="avatar" style="background-image: url('http://placehold.it/100x100');"></div>
+                <h3><a class="light">Welcome,{{session.userdata.username}}</a></h3>
+                <h4>IDR 100.000</h4>
+            </div>
+        </div>
+      <!-- tab-->
+        <dasboard-tabs></dasboard-tabs>
+      <!-- /tab-->
+        <h4 class="content padding double-padding-x">latest 7 day history</h4>
+        <div style="" class="list scrollable-list animate-fade-slide-in-right">
+            <a ui-sref="app.friends" class="item item-icon-right">
+                <h2>IDR 10.000</h2>
+                <p>mon, 1 january 2016</p>
+                <i class="icon ion-android-arrow-dropup muted"></i>
+            </a>
+            <a ui-sref="app.friends" class="item item-icon-right">
+                
+                <h2>IDR 10.000</h2>
+                <p>mon, 1 january 2016</p>
+                <i class="icon ion-android-arrow-dropdown muted"></i>
+            </a>
+            <a ui-sref="app.friends" class="item item-icon-right">
+                
+                <h2>IDR 10.000</h2>
+                 <p>mon, 1 january 2016</p>
+                <i class="icon ion-android-arrow-dropup muted"></i>
+            </a>
+            <a ui-sref="app.friends" class="item item-icon-right">
+                <h2>IDR 10.000</h2>
+                 <p>mon, 1 january 2016</p>
+                <i class="icon ion-android-arrow-dropup muted"></i>
+            </a>
+            <a ui-sref="app.friends" class="item item-icon-right">
+                <h2>IDR 10.000</h2>
+                 <p>mon, 1 january 2016</p>
+                <i class="icon ion-android-arrow-dropup muted"></i>
+            </a>
+            <a ui-sref="app.friends" class="item item-icon-right">
+                <h2>IDR 10.000</h2>
+                 <p>mon, 1 january 2016</p>
+                <i class="icon ion-android-arrow-dropup muted"></i>
+            </a>                        
+        </div>
+    </ion-content>
+</ion-view>
